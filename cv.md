@@ -67,12 +67,13 @@ console.log(groupByNames);
 * finished 9th grade of K. D. Ushinsky Gymnasium №1 in 2014
 * finished V. I. Vernadsky Taurida College in 2018, Computer Programming specialty
 * finished V. I. Vernadsky Crimean Federal University in 2021, bachelor, Applied Mathematics and Computer Science specialty  
+
+
 _Note that both diplomas and primary education certificate not recognized by the world community (except Russia) since they were issued on disputed territory_
 
 ***
 
 ### Languages
-* English - B1 Intermediate/B2 Upper Intermediate
-![advanced english level](img/EFSET.png)
+* English - B1 Intermediate/B2 Upper Intermediate ![advanced english level](img/EFSET.png)
 * Russian - Native
 * Ukraininan - Upper Intermediate
