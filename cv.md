@@ -74,8 +74,11 @@ _Note that both diplomas and primary education certificate not recognized by the
 ***
 
 ### Languages
-* English - B1 Intermediate/B2 Upper Intermediate  
+* English - B1 Intermediate/B2 Upper Intermediate   
 
-![advanced english level](img/EFSET.png)
+
+![advanced english level](img/EFSET.png)   
+
+
 * Russian - Native
 * Ukraininan - Upper Intermediate
