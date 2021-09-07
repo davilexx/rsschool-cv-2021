@@ -81,4 +81,4 @@ _Note that both diplomas and primary education certificate not recognized by the
 
 
 * Russian - Native
-* Ukraininan - Upper Intermediate
+* Ukrainian - Upper Intermediate
