@@ -13,7 +13,7 @@ __E-mail:__ andro.front99@gmail.com
 
 ### About me
 
-I've been studying basics of web development for one and a half years now. Unfortunately, I've never tried to work on a project with team, but really looking forward to. Right now I'm constantly learning and improving my frontend developer skills, especially JavaScript. My goal is to always learn new things and be useful.
+I've been studying basics of web development for one and a half years now. Unfortunately, I've never tried to work on a project with team, but really looking forward to. Right now I'm constantly learning and improving my front-end developer skills, especially JavaScript. My goal is to always learn new things and be useful.
 
 ***
 
@@ -66,13 +66,13 @@ console.log(groupByNames);
 ### Education
 * finished 9th grade of K. D. Ushinsky Gymnasium №1 in 2014
 * finished V. I. Vernadsky Taurida College in 2018, Computer Programming specialty
-* finished V. I. Vernadsky Crimean Federal University in 2021, bachelor, Applied Mathematics and Computer Science specialty
+* finished V. I. Vernadsky Crimean Federal University in 2021, bachelor, Applied Mathematics and Computer Science specialty  
 _Note that both diplomas and primary education certificate not recognized by the world community (except Russia) since they were issued on disputed territory_
 
 ***
 
 ### Languages
 * English - B1 Intermediate/B2 Upper Intermediate
-![advanced english level](img/EFSET-test-results.png)
+![advanced english level](img/EFSET.png)
 * Russian - Native
 * Ukraininan - Upper Intermediate
