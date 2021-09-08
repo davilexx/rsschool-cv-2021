@@ -1,0 +1,262 @@
+ul {
+  list-style: none;
+  padding: 0;
+  line-height: 40px;
+}
+
+section {
+  margin-bottom: 2.2rem;
+  border-bottom: 1px solid #eeeeee4b;
+  padding: 0px 10px 10px 10px;
+}
+
+body {
+  font-family: 'Open Sans';
+  background: black;
+  background: linear-gradient(164deg, black 0%, #0028bd 100%);
+  color: #eeeeee;
+}
+
+h1, h2 {
+  font-family: 'NeueMachina-Ultrabold';
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.container {
+  width: 1200px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  background: #959595;
+  background: linear-gradient(164deg, rgba(149, 149, 149, 0.564863) 0%, rgba(182, 182, 182, 0.379989) 99%);
+  border: 1px #eeeeee3b solid;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 50px 10px #24232323;
+          box-shadow: 10px 10px 50px 10px #24232323;
+}
+
+.header {
+  width: 30%;
+  padding: 20px;
+  background-color: #1b1d3675;
+}
+
+.header__profile-pic {
+  width: 100%;
+}
+
+.header__description {
+  line-height: 0;
+  margin-bottom: 5rem;
+}
+
+.contacts {
+  line-height: 24px;
+  margin-top: 50px;
+}
+
+.contacts__item_tg {
+  background: url(../img/icons/icons8-telegram-app.svg) no-repeat;
+  background-size: 30px;
+  padding-left: 40px;
+  background-position: left center;
+}
+
+.contacts__item_number {
+  background: url(../img/icons/icons8-phone.svg) no-repeat;
+  background-size: 30px;
+  padding-left: 40px;
+  background-position: left center;
+}
+
+.contacts__item_mail {
+  background: url(../img/icons/icons8-mail.svg) no-repeat;
+  background-size: 30px;
+  padding-left: 40px;
+  background-position: left center;
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: #eeeeee;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.contacts__link:hover {
+  color: #766cff;
+}
+
+.main {
+  width: 70%;
+  padding: 20px;
+  line-height: 24px;
+}
+
+.skills__item_html {
+  background: url(../img/icons/icons8-html-5.svg) no-repeat;
+  background-size: 30px;
+  padding-left: 40px;
+  background-position: left center;
+}
+
+.skills__item_css {
+  background: url(../img/icons/icons8-css3.svg) no-repeat;
+  background-size: 30px;
+  padding-left: 40px;
+  background-position: left center;
+}
+
+.skills__item_sass {
+  background: url(../img/icons/icons8-sass.svg) no-repeat;
+  background-size: 30px;
+  padding-left: 40px;
+  background-position: left center;
+}
+
+.skills__item_bs {
+  background: url(../img/icons/icons8-bootstrap.svg) no-repeat;
+  background-size: 30px;
+  padding-left: 40px;
+  background-position: left center;
+}
+
+.skills__item_js {
+  background: url(../img/icons/icons8-javascript.svg) no-repeat;
+  background-size: 30px;
+  padding-left: 40px;
+  background-position: left center;
+}
+
+.skills__item_react {
+  background: url(../img/icons/icons8-react.svg) no-repeat;
+  background-size: 30px;
+  padding-left: 40px;
+  background-position: left center;
+}
+
+.skills__item_git {
+  background: url(../img/icons/icons8-git.svg) no-repeat;
+  background-size: 30px;
+  padding-left: 40px;
+  background-position: left center;
+}
+
+.skills__item_vs {
+  background: url(../img/icons/icons8-visual-studio-code-2019.svg) no-repeat;
+  background-size: 30px;
+  padding-left: 40px;
+  background-position: left center;
+}
+
+.skills__item_ps {
+  background: url(../img/icons/icons8-adobe-photoshop.svg) no-repeat;
+  background-size: 30px;
+  padding-left: 40px;
+  background-position: left center;
+}
+
+.skills__item_figma {
+  background: url(../img/icons/icons8-figma.svg) no-repeat;
+  background-size: 30px;
+  padding-left: 40px;
+  background-position: left center;
+}
+
+.skills__item_sketch {
+  background: url(../img/icons/icons8-sketch.svg) no-repeat;
+  background-size: 30px;
+  padding-left: 40px;
+  background-position: left center;
+}
+
+.skills__item_span {
+  font-style: italic;
+}
+
+.code {
+  border-bottom: 0;
+  padding: 0;
+}
+
+.code__example {
+  background-color: #cccccc65;
+  border-radius: 10px;
+}
+
+.courses__list {
+  list-style: circle;
+  padding-left: 20px;
+  line-height: 25px;
+}
+
+.courses__item > a {
+  text-decoration: none;
+  color: #eeeeee;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  text-decoration: underline;
+}
+
+.courses__item > a:hover {
+  color: #766cff;
+}
+
+.courses__item_span {
+  font-style: italic;
+}
+
+.education__description > span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.languages {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.languages__list {
+  list-style: circle;
+  padding-left: 20px;
+}
+
+.languages__item > span {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #bdbdbd27;
+  height: 23.5%;
+  border-radius: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.github__img {
+  width: 100px;
+}
+
+.rs__img {
+  width: 200px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander Kharmansky</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="img/profile-pic.jpg" alt="Profile pic" class="header__profile-pic">
+            <h1 class="header__title">Alexander Kharmansky</h1>
+            <h3 class="header__description">21 y.o., Simferopol, Crimea</h3>
+            
+            <section class="contacts">
+                <h2 class="contacts__title">Contacts</h2>
+                <ul class="contacts__list">
+                    <li class="contacts__item_tg">
+                        <a href="https://t.me/davilex_x" class="contacts__link">Telegram</a>
+                    </li>
+                    <li class="contacts__item_number">
+                        <a href="tel:+79782506831" class="contacts__link">+7 (978) 250-68-31</a>
+                    </li>
+                    <li class="contacts__item_mail">
+                        <a href="mailto:andro.front99@gmail.com" class="contacts__link">andro.front99@gmail.com</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="skills">
+                <h2 class="skills__title">Skills</h2>
+                <ul class="skills__list">
+                    <li class="skills__item_html">HTML5</li>
+                    <li class="skills__item_css">CSS3</li>
+                    <li class="skills__item_sass">Sass</li>
+                    <li class="skills__item_bs">Bootstrap</li>
+                    <li class="skills__item_js">JavaScript <span class="skills__item_span">(basics)</span></li>
+                    <li class="skills__item_react">React <span class="skills__item_span">(basics)</span></li>
+                    <li class="skills__item_git">Git & Github</li>
+                    <li class="skills__item_vs">VS Code</li>
+                    <li class="skills__item_ps">Adobe Photoshop</li>
+                    <li class="skills__item_figma">Figma</li>
+                    <li class="skills__item_sketch">Sketch</li>
+                </ul>
+            </section>
+
+            <section class="languages">
+                <h2 class="languages__title">Languages</h2>
+                <ul class="languages__list">
+                    <li class="languages__item"><span>English</span><br>B1 Intermediate</li>
+                    <li class="languages__item"><span>Russian</span><br>Native</li>
+                    <li class="languages__item"><span>Ukrainian</span><br>Upper Intermediate</li>
+                </ul>
+            </section>
+
+        </header>
+    
+        <main class="main">
+            <section class="main__about about">
+                <h2 class="about__title">About me</h2>
+                <p class="about__description">I’ve been studying basics of web development for one and a half years now. Unfortunately, I’ve never tried to work on a project with team, but really looking forward to. Right now I’m constantly learning and improving my front-end developer skills, especially JavaScript. My goal is to always learn new things and be useful.</p>
+            </section>
+
+            <section class="courses">
+                <h2 class="class courses__title">Courses and work experience</h2>
+                <ul class="courses__list">
+                    <li class="courses__item">finished HTML & CSS advanced course at Glo Academy (former Layout Academy by Artyom Islamov) in 2017</li>
+                    <li class="courses__item">finished preparatory course at Gorbunov’s Bureau Design School</li>
+                    <li class="courses__item">test task for one company I did this year: <a href="https://alexkharmansky.github.io/all.ca/">https://alexkharmansky.github.io/all.ca/</a> <span class="courses__item_span">(different Github name since it blocked some functionality because of limitations on Crimea region including private repositories)</span></li>
+                </ul>
+            </section>
+
+            <section class="education">
+                <h2 class="education__title">Education</h2>
+                <p class="education__description"><span>V. I. Vernadsky Crimean Federal University</span><br>2018–2021
+                    <br>Bachelor's degree<br>Applied Mathematics and Computer Science specialty</p>
+            </section>
+
+            <section class="code">
+                <h2 class="code__title">Code example</h2>
+                <div class="code__example">
+                    <pre>
+                        <code class="code__js">
+    var array = [
+        {name: "Ivanov O. V.", value: 10},
+        {name: "Ivanov Oleg Ivanovich", value: 5},
+        {name: "Ivanov Ilya Petrovich", value: 10},
+        {name: "Petrov Pyotr Petrovich", value: 15},
+        {name: "Sidorov Sergey Ivanovich", value: 10},
+        {name: "Sidorov Ivan Ivanovich ", value: 10},
+    ];
+    
+    var groupByNames = array.reduce((total, item) => {
+        var splittedNames = item.name.split(" ");
+        var slicedNames = splittedNames.slice(0, 1);
+        total[slicedNames] = (total[slicedNames] || 0) + item.value;
+        return total;
+    }, {});
+    
+    console.log(groupByNames);
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="footer__github github">
+                    <a href="https://github.com/davilexx" class="github__link">
+                        <img src="img/icons8-github.svg" alt="" class="github__img">
+                    </a>
+                </div>
+                <div class="footer__rs rs">
+                    <a href="https://rs.school/js" class="rs__link">
+                        <img src="img/rs_school.svg" alt="" class="rs__img">
+                    </a>
+                </div>
+                <div class="footer__date date">
+                    <p class="date__created">ⓒ 2021</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
