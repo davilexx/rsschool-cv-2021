@@ -2,17 +2,25 @@ ul
     list-style: none
     padding: 0
     line-height: 40px
+    @media screen and (max-width: 734px)
+        line-height: 50px
 
 section
-    margin-bottom: 2.2rem
     border-bottom: 1px solid #eeeeee4b
     padding: 0px 10px 10px 10px
 
 body
     font-family: 'Open Sans'
-    background: rgb(0,0,0)
-    background: linear-gradient(164deg, rgba(0,0,0,1) 0%, rgba(0,40,189,1) 100%)
+    background: #4077b6
     color: #eeeeee
+    @media screen and (max-width: 870px)
+        font-size: 0.8rem
+
+    @media screen and (max-width: 734px)
+        font-size: 1.2rem
+    
+    @media screen and (max-width: 648px)
+        font-size: 1rem
 
 h1, h2
     font-family: 'NeueMachina-Ultrabold'
@@ -22,6 +30,8 @@ h1
 
 h2
     font-size: 2rem
+    @media screen and (max-width: 870px)
+        font-size: 1.5rem
     
 .container
     width: 1200px
@@ -33,16 +43,127 @@ h2
     border: 1px #eeeeee3b solid
     border-radius: 10px
     box-shadow: 10px 10px 50px 10px #24232323
+    @media screen and (max-width: 1225px)
+        width: 100%
+    @media screen and (max-width: 734px)
+        box-shadow: none
+
+    // MOBILE
+    @media screen and (max-width: 734px)
+        border-radius: 0
+        border: none
+        flex-direction: row
+        flex-wrap: wrap
+        background: none
+
+.menu
+    display: none
+    @media screen and (max-width: 734px)
+        display: block
+        position: fixed
+        top: 0
+        left: -100%
+        width: 100%
+        height: 100%
+        background-color: #000000cc
+        transition: 0.3s all
+
+        &__list
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            text-align: center
+            font-size: 1.2rem
+
+        &__item
+            margin: 0px 0px 50px 0px
+
+        &__link
+            text-decoration: none
+            color: #eeeeee
+
+.menu.active
+    left: 0
 
 .header
     width: 30%
     padding: 20px
     background-color: #1b1d3675
+    border-radius: 10px
+
+    &__burger
+        display: none
+        @media screen and (max-width: 734px)
+            display: block
+            position: fixed
+            width: 30px
+            height: 20px
+            z-index: 999
+
+            > span
+                position: absolute
+                background-color: #fff
+                left: 0
+                width: 30px
+                height: 2px
+                top: 9px
+                transition: 0.3s all
+                box-shadow: 6px 6px 20px 3px #24232377
+
+            &::before, &::after
+                content: ''
+                background-color: #fff
+                position: absolute
+                width: 30px
+                height: 2px
+                left: 0
+                transition: 0.3s all
+                box-shadow: 6px 6px 20px 3px #24232377
+
+            &::before
+                top: 0
+
+            &::after
+                bottom: 0
+
+    &__burger.active::before
+        transform: rotate(45deg)
+        top: 9px
+
+    &__burger.active::after
+        transform: rotate(-45deg)
+        bottom: 9px
+
+    &__burger.active span
+        transform: scale(0)
+
+    // MOBILE
+    @media screen and (max-width: 734px)
+        width: 100%
+        flex: 1
+        border-radius: 0
+        background-color: transparent
+        > img
+            display: block
+            margin-left: auto
+            margin-right: auto
+        > h1, h3
+            text-align: center
+
     &__profile-pic
         width: 100%
+        border-radius: 10px
+        @media screen and (max-width: 734px)
+            width: 40%
     &__description
-        line-height: 0
         margin-bottom: 5rem
+    &__title
+        margin-bottom: 0
+        @media screen and (max-width: 1024px)
+            font-size: 2.5rem
+        @media screen and (max-width: 870px)
+            font-size: 2rem
 
 .contacts
     line-height: 24px
@@ -74,6 +195,22 @@ h2
     width: 70%
     padding: 20px
     line-height: 24px
+    display: flex
+    flex-direction: column
+    @media screen and (max-width: 800px)
+        width: 100%
+
+    // MOBILE
+    @media screen and (max-width: 734px)
+        width: 100%
+        flex: 2
+    
+    @media screen and (max-width: 648px)
+        width: 90%
+.about
+    @media screen and (max-width: 734px)
+        &__description
+            line-height: 30px
 
 .skills
     &__item
@@ -138,15 +275,35 @@ h2
 .code
     border-bottom: 0
     padding: 0
+    &__description
+        line-height: 28px
+        > a
+            color: #eeeeee
+        > span
+            font-size: 1.2rem
+            font-weight: 700
     &__example
         background-color: #cccccc65
         border-radius: 10px
+        width: 100%
+        > pre
+            width: 100%
+            overflow: auto
+    &__js
+        @media screen and (max-width: 800px)
+            font-size: 0.75rem
+        @media screen and (max-width: 768px)
+            font-size: 0.7rem
+        @media screen and (max-width: 734px)
+            font-size: 1rem
 
 .courses
     &__list
         list-style: circle
         padding-left: 20px
         line-height: 25px
+        @media screen and (max-width: 734px)
+            line-height: 40px
     &__item
         > a
             text-decoration: none
@@ -160,8 +317,9 @@ h2
 
 .education
     &__description
+        line-height: 28px
         > span
-            font-size: 20px
+            font-size: 1.2rem
             font-weight: 700
 
 .languages
@@ -176,12 +334,16 @@ h2
             font-weight: 700
             font-size: 20px
 
+    @media screen and (max-width: 734px)
+        border-bottom: 1px solid #eeeeee4b
+        padding: 0px 10px 10px 10px
+
 .footer
     display: flex
     align-items: center
     justify-content: space-around
     background-color: #bdbdbd27
-    height: 23.5%
+    height: 100%
     border-radius: 15px
     margin: 0
     padding: 0
@@ -189,7 +351,18 @@ h2
 .github
     &__img
         width: 100px
+        @media screen and (max-width: 800px)
+            width: 50px
 
 .rs
     &__img
         width: 200px
+        @media screen and (max-width: 800px)
+            width: 100px
+
+.date__created
+    color: #000
+
+.hljs
+    background: none !important
+    color: #eee !important
