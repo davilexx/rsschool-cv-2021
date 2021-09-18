@@ -9,21 +9,12 @@ ul {
   line-height: 40px;
 }
 
-@media screen and (max-width: 734px) {
-  ul {
-    line-height: 50px;
-  }
-}
-
 section {
-  border-bottom: 1px solid #eeeeee4b;
   padding: 0px 10px 10px 10px;
 }
 
 body {
   font-family: 'Open Sans';
-  background: #4077b6;
-  color: #eeeeee;
 }
 
 @media screen and (max-width: 870px) {
@@ -35,6 +26,7 @@ body {
 @media screen and (max-width: 734px) {
   body {
     font-size: 1.2rem;
+    background-color: #4077b6;
   }
 }
 
@@ -62,6 +54,12 @@ h2 {
   }
 }
 
+@media screen and (max-width: 734px) {
+  h2 {
+    margin-top: 2rem;
+  }
+}
+
 .container {
   width: 1200px;
   height: 100%;
@@ -69,10 +67,7 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  background: #959595;
-  background: linear-gradient(164deg, rgba(149, 149, 149, 0.564863) 0%, rgba(182, 182, 182, 0.379989) 99%);
-  border: 1px #eeeeee3b solid;
-  border-radius: 10px;
+  background-color: #d9e4f1;
   -webkit-box-shadow: 10px 10px 50px 10px #24232323;
           box-shadow: 10px 10px 50px 10px #24232323;
 }
@@ -92,7 +87,6 @@ h2 {
 
 @media screen and (max-width: 734px) {
   .container {
-    border-radius: 0;
     border: none;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -151,8 +145,8 @@ h2 {
 .header {
   width: 30%;
   padding: 20px;
-  background-color: #1b1d3675;
-  border-radius: 10px;
+  background-color: #4077b6;
+  color: #eeeeee;
 }
 
 .header__burger {
@@ -222,7 +216,6 @@ h2 {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    border-radius: 0;
     background-color: transparent;
   }
   .header > img {
@@ -237,12 +230,12 @@ h2 {
 
 .header__profile-pic {
   width: 100%;
-  border-radius: 10px;
 }
 
 @media screen and (max-width: 734px) {
   .header__profile-pic {
     width: 40%;
+    border-radius: 15px;
   }
 }
 
@@ -269,6 +262,7 @@ h2 {
 .contacts {
   line-height: 24px;
   margin-top: 50px;
+  border-bottom: 1px solid #eeeeee4b;
 }
 
 .contacts__item_tg {
@@ -294,13 +288,18 @@ h2 {
 
 .contacts__link {
   text-decoration: none;
-  color: #eeeeee;
+  color: #eee;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  padding-left: 7px;
 }
 
 .contacts__link:hover {
-  color: #766cff;
+  background-color: #eee;
+  color: #4077b6;
 }
 
 .main {
@@ -328,6 +327,7 @@ h2 {
     -webkit-box-flex: 2;
         -ms-flex: 2;
             flex: 2;
+    color: #eee;
   }
 }
 
@@ -337,10 +337,27 @@ h2 {
   }
 }
 
+.about {
+  border-bottom: 1px solid #3534344b;
+}
+
 @media screen and (max-width: 734px) {
+  .about__title {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 734px) {
+  .about {
+    border-bottom: 1px solid #eeeeee4b;
+  }
   .about__description {
     line-height: 30px;
   }
+}
+
+.skills {
+  border-bottom: 1px solid #eeeeee4b;
 }
 
 .skills__item_html {
@@ -427,6 +444,13 @@ h2 {
 .code {
   border-bottom: 0;
   padding: 0;
+  border-bottom: 1px solid #3534344b;
+}
+
+@media screen and (max-width: 735px) {
+  .code {
+    border-bottom: none;
+  }
 }
 
 .code__description {
@@ -434,7 +458,19 @@ h2 {
 }
 
 .code__description > a {
-  color: #eeeeee;
+  color: #000;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+@media screen and (max-width: 734px) {
+  .code__description > a {
+    color: #eee;
+  }
+}
+
+.code__description > a:hover {
+  color: #4077b6;
 }
 
 .code__description > span {
@@ -443,7 +479,7 @@ h2 {
 }
 
 .code__example {
-  background-color: #cccccc65;
+  background-color: #c3d0df;
   border-radius: 10px;
   width: 100%;
 }
@@ -471,6 +507,16 @@ h2 {
   }
 }
 
+.courses {
+  border-bottom: 1px solid #3534344b;
+}
+
+@media screen and (max-width: 734px) {
+  .courses {
+    border-bottom: 1px solid #eeeeee4b;
+  }
+}
+
 .courses__list {
   list-style: circle;
   padding-left: 20px;
@@ -479,24 +525,46 @@ h2 {
 
 @media screen and (max-width: 734px) {
   .courses__list {
-    line-height: 40px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 734px) {
+  .courses__item {
+    margin-bottom: 10px;
   }
 }
 
 .courses__item > a {
   text-decoration: none;
-  color: #eeeeee;
+  color: #000;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   text-decoration: underline;
 }
 
+@media screen and (max-width: 734px) {
+  .courses__item > a {
+    color: #eee;
+  }
+}
+
 .courses__item > a:hover {
-  color: #766cff;
+  color: #4077b6;
 }
 
 .courses__item_span {
   font-style: italic;
+}
+
+.education {
+  border-bottom: 1px solid #3534344b;
+}
+
+@media screen and (max-width: 734px) {
+  .education {
+    border-bottom: 1px solid #eeeeee4b;
+  }
 }
 
 .education__description {
@@ -540,9 +608,7 @@ h2 {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #bdbdbd27;
   height: 100%;
-  border-radius: 15px;
   margin: 0;
   padding: 0;
 }
@@ -573,6 +639,5 @@ h2 {
 
 .hljs {
   background: none !important;
-  color: #eee !important;
 }
 /*# sourceMappingURL=style.css.map */
