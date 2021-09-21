@@ -1,0 +1,42 @@
+$white-color: #fff
+$black-color: #030303
+$forum-font: 'Forum', cursive
+$roboto-font: 'Roboto', sans-serif
+    
+body
+    background-color: #030303
+
+.header
+    &__container
+        width: 1440px
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+        height: 150px
+    &__logo
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        width: 200px
+    &__title
+        color: $white-color
+        display: inline-block
+        text-transform: uppercase
+        letter-spacing: 5px
+        font-family: $forum-font
+        margin: 0 auto
+        font-size: 28px
+        margin-left: 25px
+    &__list
+        list-style: none
+        line-height: 110px
+    &__item
+        display: inline-block
+        margin-left: 55px
+        font-family: $roboto-font
+        font-weight: 100
+    &__link
+        color: $white-color
+        text-decoration: none
+        letter-spacing: 2px
