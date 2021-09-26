@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6
         justify-content: space-between
         align-items: center
         width: 200px
+        margin-top: 5px
     &__title
         color: $white-color
         display: inline-block
@@ -34,10 +35,10 @@ h1, h2, h3, h4, h5, h6
         font-family: $forum-font
         margin: 0 auto
         font-size: 28px
-        margin-left: 25px
+        margin: 10px 0 0 25px
     &__list
         list-style: none
-        line-height: 106px
+        line-height: 115px
         display: flex
     &__item
         margin-left: 56px
@@ -52,22 +53,22 @@ h1, h2, h3, h4, h5, h6
         &:hover
             text-decoration: underline
 
-// !finish
 .welcome
     color: $white-color
     &__container
+        position: relative
         width: 1440px
         margin: 0 auto
         display: flex
         justify-content: space-between
         height: 810px
-        background-color: #aeaeae
     &__wrapper
         display: flex
         flex-direction: column
-        justify-content: space-around
+        // justify-content: center
     &__greeting
         position: absolute
+        margin-top: 150px
     &__title
         font-family: $forum-font
         font-size: 80px
@@ -123,25 +124,47 @@ h1, h2, h3, h4, h5, h6
         justify-content: space-between
         // margin: 30px 20%
     
-    // &__controls
-    //     background-color: #000
-    //     display: flex
-    //     // flex-direction: row
-    //     justify-content: right
-    //     width: 600px
-    //     height: 120px
-    //     padding: 0 75px 0 75px
+    &__controls
+        position: absolute
+        bottom: 0
+        right: 0
+        background-color: $black-color
+        width: 600px
+        height: 120px
+        font-family: $roboto-font
+        font-weight: 300
+        // padding: 15px 75px 15px 75px
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+    
+    &__control
+        display: flex
+        justify-content: space-between
+        width: 80px
+        > div
+            cursor: pointer
+        
 
-    // &__control
-    //     cursor: pointer
-    //     line-height: 90px
-    //     &_left
-    //         left: 0
-    //         right: auto
-    //         margin-right: 50px
-    //     &_left
-    //         right: 0
-    //         left: auto
+    &__placeholder-slider-pagination
+        font-size: 22px
+        margin: 5px 0 0 0
+
+    &__pagination
+        width: 180px
+        height: 16px
+        display: flex
+        justify-content: space-between
+        margin-left: -13px
+        
+    &__slider-page
+        background-color: #fff
+        width: 16px
+        height: 16px
+        &:hover
+            background-color: #D2B183
+        &.active
+            background-color: #D2B183
 
 .visiting
     background-color: #fff
@@ -176,7 +199,7 @@ h1, h2, h3, h4, h5, h6
         padding: 0
         color: $black-color
         &:hover
-            > div > h4
+            > div > h3
                 color: $gold-color
     &__tour-title
         font-size: 32px
