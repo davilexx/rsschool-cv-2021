@@ -9,6 +9,9 @@ body
     background-color: $black-color
     margin: 0
 
+h1, h2, h3, h4, h5, h6
+    font-weight: 100
+
 .header
     margin-bottom: 8px
     &__container
@@ -146,7 +149,6 @@ body
     &__container
         width: 1440px
         margin: 0 auto
-        // justify-content: space-between
         height: 1190px
     &__title
         font-size: 80px
@@ -350,6 +352,103 @@ body
             background-color: #333333
         &.active
             background-color: #333333
+
+.gallery
+    &__container
+        width: 1440px
+        margin: 0 auto
+        padding: 10px 0 0 0
+    &__title
+        text-transform: uppercase
+        color: $white-color
+        font-family: $forum-font
+        font-size: 80px
+        line-height: 90px
+        letter-spacing: 5px
+        margin-bottom: 0
+        margin-bottom: 76px
+    &__picture-container
+        height: 1960px
+        overflow-y: hidden
+        position: relative
+    &__inner-picture-container
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        height: 3000px
+        gap: 23px 34px
+    &__img
+        width: 31.7%
+        &_margin
+            margin-top: 50px
+    &__gradient
+        width: 100%
+        height: 360px
+        background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%)
+        z-index: 9
+        position: absolute
+        bottom: 0
+
+.tickets
+    background-color: $white-color
+    &__container
+        width: 1440px
+        margin: 0 auto
+        padding-top: 76px
+        height: 800px
+    &__title
+        font-size: 80px
+        letter-spacing: 5px
+        line-height: 90px
+        text-transform: uppercase
+        font-family: $forum-font
+        margin: 0
+        margin-bottom: 24px
+        color: $gold-color
+    &__underline
+        width: 100%
+        height: 3px
+        background-color: $red-color
+        margin-bottom: 74px
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &__form
+        display: flex
+        justify-content: space-between
+        font-family: $roboto-font
+        font-weight: 300
+        width: 45.8%
+    &__type
+        text-align: left
+    &__type-title
+        font-size: 28px
+        font-weight: 500
+        margin-top: 0
+        margin-bottom: 45px
+    &__label
+        display: block
+        position: relative
+        margin-bottom: 25px
+        cursor: pointer
+        font-size: 22px
+    &__radio
+        // position: absolute
+        // top: 0
+        // left: 0
+        height: 17px
+        width: 17px
+        background-color: #eee
+        border-radius: 50%
+    &__amount-title
+        font-size: 28px
+        font-weight: 500
+        margin-top: 0
+    &__num
+        all: unset
+        width: 3em
+        text-align: center
+
 
 // TOURS
 .tours
